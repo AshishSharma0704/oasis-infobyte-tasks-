@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professional Landing Page</title>
+  <style>
+    /* Base Styles */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { line-height:1.6; color: #333; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Hero Section */
+    .hero {
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      height: 80vh; text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/landing/1600/900') center/cover no-repeat;
+      color: #fff; padding: 0 20px;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 0.5em; }
+    .hero p { font-size: 1.2rem; margin-bottom: 1.5em; max-width: 600px; }
+
+    .btn-main {
+      background: #ff9800; color: #fff; padding: 0.8em 2em; border: none; border-radius: 5px;
+      font-size: 1rem; cursor: pointer; transition: background 0.3s;
+    }
+    .btn-main:hover { background: #e68900; }
+
+    /* Features Section */
+    .features {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 20px; padding: 60px 20px;
+      background: #f4f4f4;
+    }
+    .feature {
+      flex: 1 1 260px; background: #fff; padding: 20px;
+      border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .feature h3 { margin-bottom: 10px; color: #444; }
+
+    /* Trust Section */
+    .trust {
+      padding: 40px 20px; text-align: center;
+    }
+    .trust p { max-width: 700px; margin: auto; margin-bottom: 1em; }
+    .logos img { max-height: 40px; opacity: 0.7; margin: 0 10px; vertical-align: middle; }
+    .logos img:hover { opacity: 1; }
+
+    /* Footer */
+    footer {
+      background: #333; color: #fff; text-align: center; padding: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .feature { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Accelerate Your Workflow</h1>
+    <p>Transform your productivity with a unified platform built for efficiency and scale.</p>
+    <button class="btn-main">Try for Free</button>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Clean Dashboard</h3>
+      <p>Overview everything at a glance with intuitive visuals and analytics.</p>
+    </div>
+    <div class="feature">
+      <h3>Automated Tools</h3>
+      <p>Let automation handle the repetitive tasks so you can focus on what matters.</p>
+    </div>
+    <div class="feature">
+      <h3>Seamless Integration</h3>
+      <p>Connect with your favorite tools effortlessly—no setup required.</p>
+    </div>
+  </section>
+
+  <section class="trust">
+    <p>Trusted by teams at top companies:</p>
+    <div class="logos">
+      <img src="https://via.placeholder.com/100x40?text=Uber" alt="Uber">
+      <img src="https://via.placeholder.com/100x40?text=Netflix" alt="Netflix">
+      <img src="https://via.placeholder.com/100x40?text=Slack" alt="Slack">
+      <img src="https://via.placeholder.com/100x40?text=Stripe" alt="Stripe">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 YourBrand. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
